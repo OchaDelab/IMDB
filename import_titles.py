@@ -34,7 +34,7 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 """
 
 expected = 9
-bad_path = Path("bad_titles_lines.tsv").open("w", encoding="utf-8", newline="")
+bad_path = Path("out/bad_titles_lines.tsv").open("w", encoding="utf-8", newline="")
 
 def normalize_row(row):
     # IMDb TSVs: treat quotes literally; \N = NULL

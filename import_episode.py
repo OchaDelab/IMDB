@@ -28,7 +28,7 @@ insert_sql = """INSERT INTO episode
 """
 
 expected = 4
-bad_path = Path("bad_episode_lines.tsv").open("w", encoding="utf-8", newline="")
+bad_path = Path("out/bad_episode_lines.tsv").open("w", encoding="utf-8", newline="")
 
 def normalize_row(row):
     # IMDb TSVs: treat quotes literally; \N = NULL

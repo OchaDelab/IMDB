@@ -27,7 +27,7 @@ INSERT INTO crew
 """
 
 expected = 3
-bad_path = Path("bad_crew_lines.tsv").open("w", encoding="utf-8", newline="")
+bad_path = Path("out/bad_crew_lines.tsv").open("w", encoding="utf-8", newline="")
 
 def normalize_row(row):
     # IMDb TSVs: treat quotes literally; \N = NULL

@@ -31,7 +31,7 @@ insert_sql = """INSERT INTO akas
     """
 
 expected = 8
-bad_path = Path("bad_akas_lines.tsv").open("w", encoding="utf-8", newline="")
+bad_path = Path("out/bad_akas_lines.tsv").open("w", encoding="utf-8", newline="")
 
 def normalize_row(row):
     # IMDb TSVs: treat quotes literally; \N = NULL
